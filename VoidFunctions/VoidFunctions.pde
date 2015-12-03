@@ -5,6 +5,21 @@ void setup(){
  
  void draw(){
   drawRandomCircles(); 
+  if(mousePressed){
+   drawACircleAt(mouseX,mouseY);
+   }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ void drawACircleAt(int x,int y){
+   fill(150,0,255,100);
+   ellipse(x,y,30,30);
+   
+   
  }
  void drawRandomCircles(){
   float sz= random(100);
