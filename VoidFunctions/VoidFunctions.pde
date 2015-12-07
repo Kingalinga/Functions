@@ -5,13 +5,19 @@ void setup() {
 
 void draw() {
   background(0);
+  pepe();
   square();
   drawACircleAt(250, 200, 110);
   tri();
-  pepe();
+  
 }
 
-
+void pepe(){
+  PImage pepe;
+  pepe = loadImage("LeftSharkPepe.jpg"); 
+  image(pepe,200,100);
+  tint(100);
+}
 
 
 void square() {
@@ -32,9 +38,3 @@ fill(255,0,100,100);
 triangle(random(800),random(600),random(800),random(600),random(800),random(600));
  
 } 
-void pepe(){
-  PImage pepe;
-  pepe = loadImage("LeftSharkPepe.jpg"); 
-  image(pepe,0,0);
-  tint(100);
-}
